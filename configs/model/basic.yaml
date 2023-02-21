@@ -1,0 +1,12 @@
+arch: "vit_base_patch16_224"
+
+hidden_dim: 2048
+bottleneck_dim: 256
+weight_norm_dim: 0
+
+tune_type: 'full'
+stage_num: 0
+prompt_num: 10
+init: "xavier_uniform"
+
+src_log_dir: None

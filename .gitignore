@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*_bkp.py
+checkpoint/
+log*/
+exp/
+*.swp
+wandb/
+None/
+datasets/

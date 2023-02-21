@@ -1,0 +1,36 @@
+# loop logistics
+epochs: 15
+start_epoch: 0
+print_freq: 10
+
+# loss
+contrast_type: "class_aware"
+ce_type: "standard" # ["standard", "symmetric", "smoothed", "soft"]
+alpha: 1.0
+beta: 1.0
+beta2: 1.0
+eta: 1.0
+lam: 0.1
+
+# algo-related stuff
+aug_versions: "wss" # ["w", "ws", "wss", "ss"]
+dist_type: "cosine" # ["cosine", "euclidean"]
+ce_sup_type: "weak_strong" # ["weak_all", "weak_weak", "weak_strong", "self_all"]
+refine_method: "nearest_neighbors"
+num_neighbors: 10
+queue_size: -1
+epoch_labeling: false
+
+warmup_iters: 0
+few_shot_k: 100
+random_seed: 0
+eval_freq: 1
+long_epoch_ratio: 1
+prompt_div: False
+
+iters_per_batch: 4
+
+teacher_init_temp: 0.07
+warmup_epoch: 0
+
+clip_grad: 1.0

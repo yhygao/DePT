@@ -1,0 +1,9 @@
+name: "adamw"
+
+lr: 1e-3
+beta: 0.9
+weight_decay: 1e-4
+
+lr_decay: 'cos'
+schedulr: [10, 20]
+gamma: 0.2
